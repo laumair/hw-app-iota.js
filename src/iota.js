@@ -179,7 +179,12 @@ class Iota {
       }
     })
 
-    await this._signBundle(bundle, addressKeyIndices);
+    try {
+      await this._signBundle(bundle, addressKeyIndices);
+    } catch (error) {
+      console.error(error);
+      throw new Error(error)
+    }
 
     // compute and return the corresponding trytes
     const bundleTrytes = [];
