@@ -53,6 +53,7 @@ class Iota {
         'prepareTransfers',
         'getAppVersion',
         'getAppMaxBundleSize',
+        'signBundle'
       ],
       'IOT'
     );
