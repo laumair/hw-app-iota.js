@@ -581,7 +581,7 @@ class Iota {
     }
 
     // use the current time
-    const timestamp = Math.floor(now() / 1000);
+    const timestamp = now();
     let bundle = new Bundle();
 
     transfers.forEach((x) =>
